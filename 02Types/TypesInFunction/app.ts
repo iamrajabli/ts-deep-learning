@@ -7,3 +7,15 @@ const getFullNameArrow = (name:string, surname:string):string => {
 };
 
 console.log(getFullName("Хикмет", "Раджабли"));
+
+
+const getCity = (obj: {country:string, city:string}):string => {
+    return `${obj.country} ${obj.city}`;
+};
+
+const cities = {
+    country: "Azerbaijan",
+    city: "Baku"
+};
+
+console.log(getCity(cities));
