@@ -1,4 +1,4 @@
 "use strict";
 const skill = [1, 'Dev'];
-skill.push('Php');
-console.log(skill);
+const person = ['isMarried', false, 1999, 184, 19, 22];
+console.log(person);
