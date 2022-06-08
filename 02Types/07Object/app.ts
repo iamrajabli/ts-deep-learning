@@ -7,7 +7,12 @@ interface details {
     city: string
 }
 
-const cities:details = {
+type Idetails = {
+    country: string,
+    city: string
+}
+
+const cities:Idetails = {
     country: "Azerbaijan",
     city: "Baku"
 };
