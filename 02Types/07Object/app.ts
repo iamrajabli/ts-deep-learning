@@ -7,14 +7,25 @@ interface details {
     city: string
 }
 
+interface detailsMore extends details {
+    people: string,
+    count: number,
+    big: boolean
+}
+
+
+
 type Idetails = {
     country: string,
     city: string
 }
 
-const cities:Idetails = {
+const cities:detailsMore = {
     country: "Azerbaijan",
-    city: "Baku"
+    city: "Baku",
+    people: 'Azeri',
+    count: 10030023,
+    big: false
 };
 
 console.log(getCity(cities));

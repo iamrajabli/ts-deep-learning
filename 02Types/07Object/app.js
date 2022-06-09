@@ -4,6 +4,9 @@ const getCity = (obj) => {
 };
 const cities = {
     country: "Azerbaijan",
-    city: "Baku"
+    city: "Baku",
+    people: 'Azeri',
+    count: 10030023,
+    big: false
 };
 console.log(getCity(cities));
