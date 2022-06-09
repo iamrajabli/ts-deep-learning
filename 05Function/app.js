@@ -13,15 +13,12 @@ function Foo(a, b) {
 }
 ;
 ;
-function getData(url) {
+function getData(input, init) {
     return __awaiter(this, void 0, void 0, function* () {
-        const req = yield fetch(url);
-        if (!req.ok) {
-            throw new Error(`could not ${url}`);
-        }
+        const req = yield fetch(input, init);
         return yield req.json();
     });
 }
 ;
-getData('https://fakestoreapi.com/prodsucts/1')
-    .then(data => console.log(data));
+const res = getData('https://fakestoreapi.com/products/1');
+res.then(data => console.log(data));

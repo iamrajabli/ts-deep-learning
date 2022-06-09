@@ -10,14 +10,12 @@ interface IGetData {
 };
 
 
-async function getData(url:string): Promise<IGetData> {
-    const req = await fetch(url);
-    if(!req.ok) {
-        throw new Error(`could not ${url}`);
-    }
-    return await req.json();
+async function getData<T extends object | any[]>(input: RequestInfo, init?: RequestInit) {
+    const req = await fetch(input, init);
+    
+    return await req.json() as T;
 };
 
-getData('https://fakestoreapi.com/prodsucts/1')
-    .then(data => console.log(data));
-    
+const res = getData<IGetData>('https://fakestoreapi.com/products/1')
+res.then(data => console.log(data));
+
