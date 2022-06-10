@@ -2,4 +2,8 @@
 function Returner(param) {
     return param;
 }
-console.log(Returner(true));
+console.log(Returner(false));
+function Generic(a, b) {
+    return [a, b];
+}
+console.log(Generic(4, 7));

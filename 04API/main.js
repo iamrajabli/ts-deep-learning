@@ -1,2 +1,2 @@
-import getAPI from './app';
-getAPI('https://jsonplaceholder.typicode.com/todos/1');
+import getAPI from './app.js';
+getAPI('https://fakestoreapi.com/products/1');

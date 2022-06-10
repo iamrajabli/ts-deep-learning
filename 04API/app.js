@@ -15,6 +15,6 @@ function getAPI(url) {
         });
     }
     getData(url)
-        .then(data => console.log(data));
+        .then((data) => console.log(data));
 }
 export default getAPI;

@@ -7,13 +7,13 @@ function getAPI(url: string) {
     }
 
     
-    async function getData(url: string): Promise<API> {
+    async function getData(url: string) {
         const req = await fetch(url);
         return await req.json();
     }
     
     getData(url)
-        .then(data => console.log(data));    
+        .then((data:API) => console.log(data));    
 }
 
 export default getAPI;
