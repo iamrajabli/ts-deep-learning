@@ -14,7 +14,7 @@ console.log(Generic(4,7));
 function getAsType<Type>(selector:string, parent = document) {
     if(!selector) throw new Error('Selector is not valid');
     
-    return parent.querySelector(selector) as Type
+    return parent.querySelector(selector)
 }
 
 const div = getAsType<HTMLDivElement>('div');
