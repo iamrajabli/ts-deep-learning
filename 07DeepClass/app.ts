@@ -16,11 +16,10 @@ enum Type {
 class Example {
     public name;
     public age;
-    public ourCities;
+    public ourCities = null;
     constructor(name: string, age: number, ourCities: Type) {
         this.name = name;
         this.age = age;
-        this.ourCities = ourCities;
     }
 
     public myCity():void {

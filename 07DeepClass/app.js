@@ -14,9 +14,9 @@ var Type;
 })(Type || (Type = {}));
 class Example {
     constructor(name, age, ourCities) {
+        this.ourCities = null;
         this.name = name;
         this.age = age;
-        this.ourCities = ourCities;
     }
     myCity() {
         console.log(this.ourCities);
